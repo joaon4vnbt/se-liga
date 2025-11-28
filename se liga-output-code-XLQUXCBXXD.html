@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Elaborado - Matemática 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Ícones Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> <!-- Fonte Google Fonts -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav id="navbar" role="navigation" aria-label="Menu principal">
+        <div class="nav-container">
+            <h1>Meu Portfólio</h1>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#redes">Redes Sociais</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Alternar tema escuro/claro"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <header id="sobre" class="fade-in">
+        <div class="hero">
+            <img src="https://via.placeholder.com/150" alt="Foto de perfil de João Felipe do 3C" class="profile-pic">
+            <h1>Olá, sou João Felipe do 3C!</h1>
+            <p>Estudante de Matemática 2, apaixonado por programação e resolução de problemas. Este portfólio apresenta meus projetos desenvolvidos ao longo do ano.</p>
+        </div>
+    </header>
+
+    <section id="habilidades" class="fade-in">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+            <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+            <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
+            <div class="skill"><i class="fas fa-calculator"></i> Matemática Aplicada</div>
+            <div class="skill"><i class="fas fa-chart-line"></i> Visualização de Dados</div>
+            <div class="skill"><i class="fas fa-code"></i> Algoritmos</div>
+        </div>
+    </section>
+
+    <section id="projetos" class="fade-in">
+        <h2>Projetos Desenvolvidos</h2>
+        <div class="slider">
+            <button class="slider-btn prev" aria-label="Projeto anterior"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 1: Calculadora Simples">
+                    <h3>Projeto 1: Calculadora Simples</h3>
+                    <p>Uma calculadora interativa para operações básicas, desenvolvida com JS.</p>
+                    <button class="btn-projeto" data-link="https://exemplo.com/projeto1">Ver Projeto</button>
+                </div>
+                <div class="slide">
+                    <img src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 2: Jogo de Matemática">
+                    <h3>Projeto 2: Jogo de Matemática</h3>
+                    <p>Jogo educativo para praticar operações matemáticas.</p>
+                    <button class="btn-projeto" data-link="https://exemplo.com/projeto2">Ver Projeto</button>
+                </div>
+                <div class="slide">
+                    <img src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 3: Visualização de Dados">
+                    <h3>Projeto 3: Visualização de Dados</h3>
+                    <p>Gráficos dinâmicos para análise de dados usando Canvas.</p>
+                    <button class="btn-projeto" data-link="https://exemplo.com/projeto3">Ver Projeto</button>
+                </div>
+                <!-- Adicione mais slides conforme seus projetos -->
+            </div>
+            <button class="slider-btn next" aria-label="Próximo projeto"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="contato" class="fade-in">
+        <h2>Entre em Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required aria-describedby="name-error">
+            <span id="name-error" class="error" role="alert"></span>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required aria-describedby="email-error">
+            <span id="email-error" class="error" role="alert"></span>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+            <span id="message-error" class="error" role="alert"></span>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="redes" class="fade-in">
+        <h2>Redes Sociais</h2>
+        <div class="social-grid">
+            <a href="https://github.com/seu-usuario" target="_blank" aria-label="Visite meu GitHub">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/seu-perfil" target="_blank" aria-label="Visite meu LinkedIn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://twitter.com/seu-usuario" target="_blank" aria-label="Visite meu Twitter">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="mailto:seu-email@example.com" aria-label="Envie um e-mail">
+                <i class="fas fa-envelope"></i> E-mail
+            </a>
+        </div>
+    </section>
+
+    <button id="back-to-top" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <p>&copy; 2023 João Felipe do 3C. Desenvolvido para Matemática 2. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
